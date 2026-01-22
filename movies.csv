@@ -1,0 +1,102 @@
+movieId,title,genres
+1,"Toy Story (1995)",Adventure|Animation|Children|Comedy|Fantasy
+2,"Jumanji (1995)",Adventure|Children|Fantasy
+3,"Grumpier Old Men (1995)",Comedy|Romance
+4,"Waiting to Exhale (1995)",Comedy|Drama|Romance
+5,"Father of the Bride Part II (1995)",Comedy
+6,"Heat (1995)",Action|Crime|Thriller
+7,"Sabrina (1995)",Comedy|Romance
+8,"Tom and Huck (1995)",Adventure|Children
+9,"Sudden Death (1995)",Action
+10,"GoldenEye (1995)",Action|Adventure|Thriller
+11,"American President, The (1995)",Comedy|Drama|Romance
+12,"Dracula: Dead and Loving It (1995)",Comedy|Horror
+13,"Balto (1995)",Adventure|Animation|Children
+14,"Nixon (1995)",Drama
+15,"Cutthroat Island (1995)",Action|Adventure|Romance
+16,"Casino (1995)",Crime|Drama
+17,"Sense and Sensibility (1995)",Drama|Romance
+18,"Four Rooms (1995)",Comedy
+19,"Ace Ventura: When Nature Calls (1995)",Comedy
+20,"Money Train (1995)",Action|Comedy|Crime|Drama|Thriller
+21,"Seven (1995)",Crime|Mystery|Thriller
+22,"Usual Suspects, The (1995)",Crime|Mystery|Thriller
+23,"Mighty Aphrodite (1995)",Comedy|Romance
+24,"Postman, The (1994)",Drama
+25,"Braveheart (1995)",Action|Drama|War
+26,"Taxi Driver (1976)",Crime|Drama
+27,"Goodfellas (1990)",Crime|Drama
+28,"Reservoir Dogs (1992)",Crime|Thriller
+29,"Pulp Fiction (1994)",Crime|Drama
+30,"Forrest Gump (1994)",Comedy|Drama|Romance
+31,"Shawshank Redemption, The (1994)",Drama
+32,"Godfather, The (1972)",Crime|Drama
+33,"Godfather: Part II, The (1974)",Crime|Drama
+34,"Dark Knight, The (2008)",Action|Crime|Drama
+35,"Fight Club (1999)",Drama|Thriller
+36,"Inception (2010)",Action|Sci-Fi|Thriller
+37,"Matrix, The (1999)",Action|Sci-Fi
+38,"Interstellar (2014)",Adventure|Drama|Sci-Fi
+39,"Gladiator (2000)",Action|Drama
+40,"Avatar (2009)",Action|Adventure|Sci-Fi
+41,"Titanic (1997)",Drama|Romance
+42,"Jurassic Park (1993)",Adventure|Sci-Fi|Thriller
+43,"Lion King, The (1994)",Animation|Children|Drama
+44,"Avengers, The (2012)",Action|Adventure|Sci-Fi
+45,"Iron Man (2008)",Action|Adventure|Sci-Fi
+46,"Thor (2011)",Action|Adventure|Fantasy
+47,"Captain America: The First Avenger (2011)",Action|Adventure|Sci-Fi
+48,"Spider-Man (2002)",Action|Adventure|Sci-Fi
+49,"Batman Begins (2005)",Action|Crime|Drama
+50,"Joker (2019)",Crime|Drama|Thriller
+51,"Deadpool (2016)",Action|Comedy
+52,"Logan (2017)",Action|Drama
+53,"Doctor Strange (2016)",Action|Adventure|Fantasy
+54,"Guardians of the Galaxy (2014)",Action|Adventure|Sci-Fi
+55,"Black Panther (2018)",Action|Adventure|Sci-Fi
+56,"Infinity War (2018)",Action|Adventure|Sci-Fi
+57,"Endgame (2019)",Action|Adventure|Sci-Fi
+58,"Harry Potter and the Sorcerer's Stone (2001)",Adventure|Fantasy
+59,"Harry Potter and the Chamber of Secrets (2002)",Adventure|Fantasy
+60,"Harry Potter and the Prisoner of Azkaban (2004)",Adventure|Fantasy
+61,"Lord of the Rings: Fellowship of the Ring (2001)",Adventure|Fantasy
+62,"Lord of the Rings: Two Towers (2002)",Adventure|Fantasy
+63,"Lord of the Rings: Return of the King (2003)",Adventure|Fantasy
+64,"Hobbit: An Unexpected Journey (2012)",Adventure|Fantasy
+65,"Star Wars: A New Hope (1977)",Action|Adventure|Sci-Fi
+66,"Star Wars: Empire Strikes Back (1980)",Action|Adventure|Sci-Fi
+67,"Star Wars: Return of the Jedi (1983)",Action|Adventure|Sci-Fi
+68,"Terminator 2: Judgment Day (1991)",Action|Sci-Fi|Thriller
+69,"Alien (1979)",Horror|Sci-Fi
+70,"Aliens (1986)",Action|Sci-Fi|Thriller
+71,"Predator (1987)",Action|Sci-Fi|Thriller
+72,"Die Hard (1988)",Action|Thriller
+73,"Rocky (1976)",Drama|Sport
+74,"Rambo: First Blood (1982)",Action|Drama
+75,"Creed (2015)",Drama|Sport
+76,"Fast and the Furious, The (2001)",Action|Crime|Thriller
+77,"Fast Five (2011)",Action|Crime|Thriller
+78,"Transformers (2007)",Action|Sci-Fi
+79,"Pacific Rim (2013)",Action|Sci-Fi
+80,"Godzilla (2014)",Action|Sci-Fi
+81,"King Kong (2005)",Action|Adventure
+82,"Pirates of the Caribbean (2003)",Action|Adventure|Fantasy
+83,"Finding Nemo (2003)",Animation|Adventure|Children
+84,"Monsters, Inc. (2001)",Animation|Comedy|Children
+85,"Up (2009)",Animation|Adventure|Comedy
+86,"Wall-E (2008)",Animation|Sci-Fi
+87,"Coco (2017)",Animation|Family
+88,"Inside Out (2015)",Animation|Family
+89,"Spirited Away (2001)",Animation|Fantasy
+90,"Your Name (2016)",Animation|Romance|Fantasy
+91,"Parasite (2019)",Drama|Thriller
+92,"Oldboy (2003)",Drama|Thriller
+93,"Train to Busan (2016)",Action|Horror|Thriller
+94,"Conjuring, The (2013)",Horror|Thriller
+95,"It (2017)",Horror|Thriller
+96,"Get Out (2017)",Horror|Thriller
+97,"Quiet Place, A (2018)",Horror|Thriller
+98,"La La Land (2016)",Drama|Romance|Music
+99,"Whiplash (2014)",Drama|Music
+100,"Bohemian Rhapsody (2018)",Drama|Music
+   
