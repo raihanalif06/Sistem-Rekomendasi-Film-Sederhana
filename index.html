@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Rekomendasi Film</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a47a3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #3b388f;
+}
+
+.hasil {
+    margin-top: 25px;
+}
+
+.hasil h2 {
+    margin-bottom: 10px;
+}
+
+.hasil ul {
+    list-style: none;
+}
+
+.hasil li {
+    background: #f3f3f3;
+    padding: 8px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+
+.card select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+    </style>
+</head>
+<body>
+
+   <div class="container">
+    <h1>🎬 Sistem Rekomendasi Film</h1>
+    <p class="subtitle">
+        Pilih genre film favorit, sistem akan merekomendasikan film serupa
+    </p>
+
+    <div class="card">
+        <label for="genre">Pilih Genre Film</label>
+        <select id="genre">
+            <option value="">-- Pilih Genre --</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Animation">Animation</option>
+            <option value="Children">Children</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Family">Family</option>
+            <option value="Horror">Horror</option>
+            <option value="Music">Music</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Romance">Romance</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Sport">Sport</option>
+            <option value="Thriller">Thriller</option>
+            <option value="War">War</option>
+        </select>
+
+        <button onclick="tampilkanRekomendasi()">
+            Tampilkan Rekomendasi
+        </button>
+    </div>
+
+    <div class="hasil">
+        <h2>Rekomendasi Film</h2>
+        <ul id="listRekomendasi"></ul>
+    </div>
+</div>
+
+<script>
+function tampilkanRekomendasi() {
+    const genre = document.getElementById("genre").value;
+    const list = document.getElementById("listRekomendasi");
+    list.innerHTML = "";
+
+    if (genre === "") {
+        list.innerHTML = "<li>Silakan pilih genre terlebih dahulu</li>";
+        return;
+    }
+
+    // Data simulasi rekomendasi berdasarkan genre
+    const rekomendasi = {
+        "Action": [
+            "Die Hard (1988)",
+            "Mad Max: Fury Road (2015)",
+            "John Wick (2014)",
+            "Gladiator (2000)",
+            "The Dark Knight (2008)"
+        ],
+        "Adventure": [
+            "Indiana Jones (1981)",
+            "Jurassic Park (1993)",
+            "Pirates of the Caribbean (2003)",
+            "King Kong (2005)",
+            "The Hobbit (2012)"
+        ],
+        "Animation": [
+            "Toy Story (1995)",
+            "Finding Nemo (2003)",
+            "Up (2009)",
+            "Wall-E (2008)",
+            "Coco (2017)"
+        ],
+        "Children": [
+            "Toy Story (1995)",
+            "Monsters, Inc. (2001)",
+            "Finding Nemo (2003)",
+            "Lion King (1994)",
+            "Balto (1995)"
+        ],
+        "Comedy": [
+            "Ace Ventura (1995)",
+            "The Mask (1994)",
+            "Home Alone (1990)",
+            "Dumb and Dumber (1994)",
+            "Deadpool (2016)"
+        ],
+        "Crime": [
+            "The Godfather (1972)",
+            "Goodfellas (1990)",
+            "Pulp Fiction (1994)",
+            "Casino (1995)",
+            "Se7en (1995)"
+        ],
+        "Drama": [
+            "Forrest Gump (1994)",
+            "Shawshank Redemption (1994)",
+            "Titanic (1997)",
+            "Parasite (2019)",
+            "Gladiator (2000)"
+        ],
+        "Fantasy": [
+            "Harry Potter (2001)",
+            "Lord of the Rings (2001)",
+            "The Hobbit (2012)",
+            "Doctor Strange (2016)",
+            "Spirited Away (2001)"
+        ],
+        "Family": [
+            "Coco (2017)",
+            "Inside Out (2015)",
+            "Up (2009)",
+            "Paddington (2014)",
+            "Finding Nemo (2003)"
+        ],
+        "Horror": [
+            "The Conjuring (2013)",
+            "It (2017)",
+            "Get Out (2017)",
+            "A Quiet Place (2018)",
+            "Train to Busan (2016)"
+        ],
+        "Music": [
+            "Bohemian Rhapsody (2018)",
+            "Whiplash (2014)",
+            "La La Land (2016)",
+            "Rocketman (2019)",
+            "A Star Is Born (2018)"
+        ],
+        "Mystery": [
+            "Se7en (1995)",
+            "Gone Girl (2014)",
+            "Shutter Island (2010)",
+            "The Prestige (2006)",
+            "Prisoners (2013)"
+        ],
+        "Romance": [
+            "Titanic (1997)",
+            "La La Land (2016)",
+            "The Notebook (2004)",
+            "Pride & Prejudice (2005)",
+            "Your Name (2016)"
+        ],
+        "Sci-Fi": [
+            "Interstellar (2014)",
+            "Inception (2010)",
+            "The Matrix (1999)",
+            "Avatar (2009)",
+            "Blade Runner 2049 (2017)"
+        ],
+        "Sport": [
+            "Rocky (1976)",
+            "Creed (2015)",
+            "Rush (2013)",
+            "Ford v Ferrari (2019)",
+            "Million Dollar Baby (2004)"
+        ],
+        "Thriller": [
+            "Se7en (1995)",
+            "Joker (2019)",
+            "Fight Club (1999)",
+            "Gone Girl (2014)",
+            "The Silence of the Lambs (1991)"
+        ],
+        "War": [
+            "Saving Private Ryan (1998)",
+            "Hacksaw Ridge (2016)",
+            "1917 (2019)",
+            "Fury (2014)",
+            "Dunkirk (2017)"
+        ]
+    };
+
+    rekomendasi[genre].forEach(film => {
+        const li = document.createElement("li");
+        li.textContent = film;
+        list.appendChild(li);
+    });
+}
+</script>
+
+</body>
+</html>
